@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 480px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #4f46e5;
+    color: #fff;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #f9fafb;
+}
+
+.message {
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.message.bot {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.message.user {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.avatar {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.text {
+    background: #e5e7eb;
+    padding: 12px 14px;
+    border-radius: 14px;
+    max-width: 75%;
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+.message.bot .text {
+    background: #e5e7eb;
+    color: #111827;
+    border-bottom-left-radius: 0;
+}
+
+.message.user .text {
+    background: #4f46e5;
+    color: #fff;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 14px;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.chat-input button {
+    padding: 10px 14px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.chat-input button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.typing-indicator {
+    font-style: italic;
+    color: #555;
+    font-size: 14px;
+    margin-left: 34px;
+}
+
+code {
+    background-color: #2b2626;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: aliceblue;
+}
+
+pre code {
+    display: block;
+    white-space: pre-wrap;
+}
