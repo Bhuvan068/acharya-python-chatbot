@@ -1,7 +1,7 @@
 const chatMessages = document.getElementById("chatMessages");
 const userInput = document.getElementById("userInput");
 
-const API_KEY = "AIzaSyBQqLBSPeSyzVtKtNsRqU10LxbbyOknPo4";
+const API_KEY = "place ur api keys ";
 
 // Append message to chat
 function appendMessage(sender, text) {
