@@ -7,7 +7,7 @@ User-Friendly Chat Interface:
 A clean UI featuring user and bot avatars, message bubbles, and auto-scroll behavior to enhance the conversation flow.
 
 Gemini API Integration:
-Sends user messages to the Gemini 1.5 Flash model and displays the AI-generated response in real-time.
+Sends user messages to the Gemini  Flash model and displays the AI-generated response in real-time.
 
 Voice Recognition:
 Built-in microphone support using the browser's Web Speech API allows users to speak their queries and get responses without typing.
